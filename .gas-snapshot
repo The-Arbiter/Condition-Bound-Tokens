@@ -1,0 +1,2 @@
+ConditionBoundTokenTest:testConditionBoundFunctionality(address,address) (runs: 256, μ: 136175, ~: 136237)
+ConditionBoundTokenTest:testMintTokens(address) (runs: 256, μ: 86318, ~: 86361)
