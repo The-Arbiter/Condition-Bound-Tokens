@@ -103,7 +103,11 @@ contract ConditionBoundToken is ERC721, Ownable{
         }
         // Mint token
         _safeMint(to, totalSupply);
-        ++totalSupply;
+
+        // Overflow is impossible since totalSupply+1 < MAX_SUPPLY
+        unchecked {
+            ++totalSupply;
+        } 
     }
 
     /// @notice Burn the given token
